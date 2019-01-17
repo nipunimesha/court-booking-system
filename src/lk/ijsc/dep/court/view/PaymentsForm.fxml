@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijsc.dep.court.controler.PaymentsFormControler">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="18.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imeges/sports-collage-wallpaper-for-walls-mw-136-preview-300x212.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tablePayment" layoutX="15.0" layoutY="186.0" prefHeight="200.0" prefWidth="573.0">
+        <columns>
+          <TableColumn prefWidth="142.0" text="Payment ID" />
+          <TableColumn prefWidth="158.0" text="Hourse" />
+            <TableColumn prefWidth="272.0" text="Total" />
+        </columns>
+      </TableView>
+      <Label layoutX="100.0" layoutY="47.0" text="P ID">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="88.0" text="Hours">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="132.0" text="Prize For One Hour  = RS 400.00" textFill="#1a1b19">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPID" layoutX="263.0" layoutY="43.0" />
+      <TextField fx:id="txtHours" layoutX="263.0" layoutY="84.0" />
+      <Label layoutX="217.0" text="Payments" textFill="#511bd0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgHome" fitHeight="45.0" fitWidth="34.0" layoutX="18.0" layoutY="21.0" onMouseClicked="#imgHomeOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imeges/House_48px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

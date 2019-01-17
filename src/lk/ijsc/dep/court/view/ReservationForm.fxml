@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijsc.dep.court.controler.ReservationFormControler">
+   <children>
+      <ImageView fitHeight="538.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imeges/0156d5484ca2817.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableBookedCourts" layoutX="32.0" layoutY="216.0" prefHeight="161.0" prefWidth="539.0">
+        <columns>
+          <TableColumn prefWidth="159.0" text="Date" />
+          <TableColumn prefWidth="184.0" text="Time" />
+            <TableColumn prefWidth="195.0" text="Courte Name" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNew" alignment="BOTTOM_CENTER" layoutX="66.0" layoutY="31.0" mnemonicParsing="false" onAction="#btnNewOnAction" prefHeight="88.0" prefWidth="73.0" text="New" />
+      <ImageView fitHeight="43.0" fitWidth="48.0" layoutX="81.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imeges/Add%20User%20Male_48px.png" />
+         </image>
+      </ImageView>
+      <Button alignment="BOTTOM_CENTER" layoutX="265.0" layoutY="31.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="73.0" text="Update" />
+      <Button alignment="BOTTOM_CENTER" layoutX="473.0" layoutY="31.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="73.0" text="Delete" />
+      <ImageView fitHeight="43.0" fitWidth="55.0" layoutX="280.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imeges/Uninstalling%20Updates_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="488.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imeges/Close%20Window_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgHome" fitHeight="31.0" fitWidth="32.0" layoutX="16.0" layoutY="16.0" onMouseClicked="#imgHomeClickOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imeges/House_48px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="233.0" layoutY="155.0" text="Available Courts" textFill="#4607b2">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
